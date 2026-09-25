@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataset": {
+    "name": "Inventory Tracking v2 — Providers clinical supply demo data",
+    "version": "1.0.0",
+    "description": "Fictitious clinical supply inventory (Providers industry) keyed to the target inv2_ schema; item->category resolved via relationship. No source rows."
+  },
+  "sourceDataPolicy": "generated-from-approved-scenarios-no-source-rows",
+  "scenarios": [
+    { "id": "scenario:load", "title": "Load clinical supplies", "narrative": "Categories load first, then items resolve their category by name to the inv2_CategoryId lookup. Several items are at or below their reorder threshold." }
+  ],
+  "entities": [
+    {
+      "logicalName": "inv2_itemcategory",
+      "file": "inv2_itemcategory.csv",
+      "recordCount": 5,
+      "keyColumn": "inv2_categoryname",
+      "loadOrder": 1,
+      "scenarioIds": ["scenario:load"]
+    },
+    {
+      "logicalName": "inv2_inventoryitem",
+      "file": "inv2_inventoryitem.csv",
+      "recordCount": 15,
+      "keyColumn": "inv2_itemname",
+      "loadOrder": 2,
+      "scenarioIds": ["scenario:load"],
+      "relationships": [
+        {
+          "column": "CategoryKey",
+          "targetEntity": "inv2_itemcategory",
+          "targetKey": "inv2_categoryname",
+          "navigationProperty": "inv2_CategoryId"
+        }
+      ]
+    }
+  ]
+}
