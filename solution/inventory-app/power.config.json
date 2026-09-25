@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "appId": null,
+  "appDisplayName": "Inventory Tracking v2",
+  "region": "prod",
+  "environmentId": "{{ENVIRONMENT_ID}}",
+  "description": " ",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {},
+  "databaseReferences": {
+    "default.cds": {
+      "dataSources": {
+        "itemcategories": {
+          "entitySetName": "inv2_itemcategories",
+          "logicalName": "inv2_itemcategory"
+        },
+        "inventoryitems": {
+          "entitySetName": "inv2_inventoryitems",
+          "logicalName": "inv2_inventoryitem"
+        }
+      },
+      "environmentVariableName": ""
+    }
+  }
+}

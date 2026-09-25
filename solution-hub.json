@@ -1,0 +1,27 @@
+{
+  "title": "Inventory Tracking v2",
+  "industry": "Providers",
+  "contentTypes": [
+    "Demo Assets"
+  ],
+  "technicalAreas": [
+    "Power Platform",
+    "Dataverse",
+    "AI Agents"
+  ],
+  "contributors": "Kyle Thompson",
+  "narrative": "A clinical supply inventory tracker with an item detail view (with image), an actionable reorder dashboard, and a Copilot assistant grounded in Dataverse.",
+  "githubRepoUrl": "https://github.com/walkthenose75/inventory-tracker-go",
+  "readiness": {
+    "ready": true,
+    "present": [
+      "title",
+      "industry",
+      "contentTypes",
+      "technicalAreas",
+      "narrative",
+      "githubRepoUrl"
+    ],
+    "missing": []
+  }
+}

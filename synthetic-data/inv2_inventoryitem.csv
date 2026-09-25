@@ -1,0 +1,16 @@
+inv2_itemname,CategoryKey,inv2_costperitem,inv2_onhandcount,inv2_reorderthreshold
+Nitrile Exam Gloves (M),PPE,8.50,18,40
+Isolation Gowns,PPE,3.25,120,50
+Surgical Masks (Level 2),PPE,0.35,600,200
+Face Shields,PPE,2.10,22,30
+Gauze Sponges 4x4,Wound Care,0.18,900,300
+Adhesive Bandages,Wound Care,0.06,1500,400
+Wound Closure Strips,Wound Care,4.75,15,25
+Antiseptic Wipes,Wound Care,0.09,250,200
+IV Catheters 20G,IV Therapy,1.45,80,60
+IV Tubing Sets,IV Therapy,2.85,40,50
+Saline Flush Syringes,IV Therapy,0.55,140,150
+Blood Glucose Test Strips,Diagnostics,0.42,300,120
+Specimen Collection Tubes,Diagnostics,0.28,220,150
+Oxygen Nasal Cannula,Respiratory,1.10,95,60
+Nebulizer Kits,Respiratory,3.60,18,25
